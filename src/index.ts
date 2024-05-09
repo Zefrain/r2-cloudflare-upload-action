@@ -198,8 +198,7 @@ const putObject: UploadHandler<PutObjectCommandOutput> = async (file, config) =>
 
     console.info(`using put object upload for ${fileKey}`);
 
-    // const fileStream = fs.readFileSync(file);
-    const fileStream = fs.createReadStream(file);
+    const fileStream = fs.readFileSync(file);
     const uploadParams: PutObjectCommandInput = {
         Bucket: config.bucket,
         Key: fileKey,
