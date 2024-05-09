@@ -32,3 +32,9 @@ jobs:
           commit_user_name: r2-action-bot[bot]
           commit_user_email: 118486773+r2-action-bot[bot]@users.noreply.github.com
           commit_author: r2-action-bot[bot] <118486773+r2-action-bot[bot]@users.noreply.github.com>
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          repository: ${{ github.repository }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag_name: v1.2.3
