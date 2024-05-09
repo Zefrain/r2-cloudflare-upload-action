@@ -1,4 +1,4 @@
-name: 'R2 Upload Action'
+name: 'Cloudflare R2 Upload Action'
 description: 'GitHub Action to upload files to a Cloudflare R2 bucket'
 author: 'ryand56'
 branding:
