@@ -1,7 +1,9 @@
 name: Action CI
 
 on:
+  workflow_dispatch:
   push:
+  
     branches:
       - master
 
